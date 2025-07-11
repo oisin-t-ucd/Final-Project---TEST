@@ -1,3 +1,9 @@
+---
+const pageTitle = "Feeling Good";
+import '/src/styles/mainstyle.css';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+---
 <!DOCTYPE html>
 <html lang="en">
     <html>
@@ -6,13 +12,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Final Project</title>
+		<title>{pageTitle}</title
+    <!-- The title of the page is set to "Feeling Good" -->
 </head>
 <body>
-    <a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/blog">Blog</a>
-    <h1> Feeling Good</h1>
+    <!-- this contains a Nav bar component --> 
+    <Header />
+    <h1> {pageTitle} </h1>
     <p> You ever have those days where you can't help but smile? <br>
         The sun is shining, the birds are singing, and everything just feels right. <br>
         It's the kind of day that makes you want to turn up the music and just vibe. No worries, no stress, just happiness. <br>
@@ -49,7 +55,14 @@
                 It's a reminder that true love never goes out of style and that sometimes the best things in life are the simplest. <br>
                 The catchy chorus and upbeat tempo will have you singing along in no time.</p></div>
         
-
-                
-        </body>
+<ul> 
+    <li><a href="/src/blog/feelinggood.md"> Feeling Good</a></li>
+     <Footer />   
+  <script>
+    document.querySelector('.hamburger')?.addEventListener('click', () => {
+      document.querySelector('.nav-links')?.classList.toggle('expanded');
+    });
+  </script>
+</body>
+    
 </html>
