@@ -1,0 +1,22 @@
+---
+const pageTitle = "Coming Soon";
+import '/src/styles/mainstyle.css';
+import '/src/styles/nav.css';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+import '/src/scripts/nav.js';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title> {pageTitle} </title>
+    </head>
+    <body>
+         <!-- this contains a Nav bar component  -->
+    <Header />
+    <h1> {pageTitle} </h1>
+    </body>
+</html>

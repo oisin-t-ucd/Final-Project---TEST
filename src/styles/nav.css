@@ -1,0 +1,50 @@
+/* Styling links */
+a:link { 
+    color: rgb(236, 12, 165);
+    text-decoration: underline;
+}
+a:visited {
+    color: rgb(247, 247, 247);
+    text-decoration: underline;
+}
+a:hover {
+    color: rgb(0, 158, 202);
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(8, 8, 8);
+    text-decoration: underline;
+}
+
+.nav-links a {
+  display: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: rgb(247, 247, 247);
+}
+    
+
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  
+
+
+
+}

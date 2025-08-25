@@ -1,0 +1,5 @@
+
+/* footer was not centered so I created a new CSS file for it and imported it into the Footer.astro component */
+p { text-align: center; 
+   margin-top: 1px;
+  margin-bottom: 20px; }

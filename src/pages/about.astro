@@ -1,8 +1,10 @@
 ---
 const pageTitle = "Music by Mood";
 import '/src/styles/mainstyle.css';
+import '/src/styles/nav.css';
 import Header from '/src/components/Header.astro';
 import Footer from '/src/components/Footer.astro';
+import '/src/scripts/nav.js';
 ---
 <html lang="en">
 	<head>
@@ -12,6 +14,17 @@ import Footer from '/src/components/Footer.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
         <!--- The title of the page is set to "Music by Mood" --->
+        <style> h1 {
+			    text-align: center; 
+                margin-top: 100px;
+			    margin-bottom: 1px;
+			    font-family: sans-serif;
+			    padding: 10px;}
+                
+                p {
+                    text-align: center; 
+                    margin-top: 1px;
+				    margin-bottom: 20px; } </style>
 	</head>
 	<body>
         <!-- this contains a Nav bar component --> 

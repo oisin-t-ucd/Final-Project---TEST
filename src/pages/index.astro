@@ -1,8 +1,9 @@
 ---
 const pageTitle = "Music by Mood";
+import '/src/styles/nav.css';
 import Header from '/src/components/Header.astro';
 import Footer from '/src/components/Footer.astro';
-
+import '/src/scripts/nav.js';
 ---
 
 <html lang="en">
@@ -12,7 +13,7 @@ import Footer from '/src/components/Footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<!--- The title of the page is set to "Music by Mood" --->
+		<!-- The title of the page is set to "Music by Mood" -->
 		<style>
 			body {
 				background-image: url('/src/images/background_image.jpg');
@@ -38,26 +39,10 @@ import Footer from '/src/components/Footer.astro';
 			h2 {
 				font-size: 3.5em;
 				margin-top: 1px;
-				margin-bottom: 450px;
+				margin-bottom: 10px;
 				font-family: sans-serif;
 			}
-		    a:link {
-				color: #f688b2ff;
-				text-decoration: underline;
-			}
-			a:visited {
-				color: #d1145dff;
-				text-decoration: underline;
-			}
-			a:hover {
-				color: #3cd3e7ff;
-				text-decoration: underline;
-			}
-			a:active {
-				color: #f0f0f0ff;
-				text-decoration: underline;
-			}
-			
+		  
 			</style>
 	
 	</head>
@@ -68,10 +53,7 @@ import Footer from '/src/components/Footer.astro';
 		<h2> Welcome to the Music of my Soul</h2>
 		 <Footer />
 		 <script>
-			document.querySelector('.hamburger').addEventListener('click', () => {
-				document.querySelector('.nav-links')?.classList.toggle('expanded');
-
-			});
+		
 		 </script>
 	</body>
 </html>

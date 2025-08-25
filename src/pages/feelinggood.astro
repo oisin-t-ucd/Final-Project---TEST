@@ -1,8 +1,11 @@
 ---
 const pageTitle = "Feeling Good";
 import '/src/styles/mainstyle.css';
+import '/src/styles/nav.css';
 import Header from '/src/components/Header.astro';
 import Footer from '/src/components/Footer.astro';
+import '/src/scripts/nav.js';
+
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -13,17 +16,17 @@ import Footer from '/src/components/Footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title
-    <!-- The title of the page is set to "Feeling Good" -->
+     <!-- The title of the page is set to "Feeling Good" -->
 </head>
 <body>
-    <!-- this contains a Nav bar component --> 
+    <!-- this contains a Nav bar component  -->
     <Header />
     <h1> {pageTitle} </h1>
     <p> You ever have those days where you can't help but smile? <br>
         The sun is shining, the birds are singing, and everything just feels right. <br>
         It's the kind of day that makes you want to turn up the music and just vibe. No worries, no stress, just happiness. <br>
         Here are 3 of my favourite feel-good songs that I can listen to on repeat: </p>
-        <!---I am adding an unordered list to showcase 3 of my favourite feel-good song with links to YouTube--->
+        <!-- I am adding an unordered list to showcase 3 of my favourite feel-good song with links to YouTube -->
         <ul type="circle">
             <li> 'Meant to be' by Bebe Rexha and Florida Georgia Line</li>
             <a href="https://www.youtube.com/watch?v=zDo0H8Fm7d0"> Listen to 'Meant to be' on YouTube</a>
@@ -32,7 +35,7 @@ import Footer from '/src/components/Footer.astro';
             <li> 'Classic' by MKTO </li>
              <a href="https://www.youtube.com/watch?v=4Ba_qTPA4Ds"> Listen to 'Classic' on YouTube</a></ul>
         <div>
-        <!---I will now go into each song listed in more detail, provide an image--->
+        <!-- I will now go into each song listed in more detail, provide an image -->
 
          <h2> 'Meant to be' by Bebe Rexha and Florida Georgia Line </h2>
          <img src="/src/images/MeantToBe-Bebe-Rexha.jpg" alt="Meant to be by Bebe Rexha and Florida Georgia Line" width="300" height="300">
@@ -56,12 +59,10 @@ import Footer from '/src/components/Footer.astro';
                 The catchy chorus and upbeat tempo will have you singing along in no time.</p></div>
         
 <ul> 
-    <li><a href="/src/blog/feelinggood.md"> Feeling Good</a></li>
+
      <Footer />   
   <script>
-    document.querySelector('.hamburger')?.addEventListener('click', () => {
-      document.querySelector('.nav-links')?.classList.toggle('expanded');
-    });
+  
   </script>
 </body>
     
