@@ -1,0 +1,70 @@
+---
+const pageTitle = "Rainy Days";
+import '/src/styles/mainstyle.css';
+import '/src/styles/nav.css';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+import '/src/scripts/nav.js';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title> {pageTitle} </title>
+    </head>
+    <body>
+         <!-- this contains a Nav bar component  -->
+    <Header />
+    <h1> {pageTitle} </h1>
+     <p> Sometimes you wake up and the sky is crying<br>
+        The sun is hiding and everything feels muffled under a steadfast beat of rain. <br>
+        It's the kind of day that makes you want to cuddle up with a hot drink and crack open a good book or binge-watch your favourite show. <br>
+        Here are 3 of my favourite rainy day songs that fit just right </p>
+        <!-- I am adding an unordered list to showcase 3 of my favourite rainy day songs with links to YouTube -->
+        <ul type="circle">
+            <li> 'The Sky is Crying' by Gary Moore </li>
+            <a href="https://www.youtube.com/watch?v=9GSjYdaGMqI">Listen to 'The Sky is Crying' on Youtube</a>
+            <li> 'Purple Rain' by Prince </li>
+             <a href="https://www.youtube.com/watch?v=TvnYmWpD_T8">Listen to 'Purple Rain' on Youtube</a>
+            <li> 'Rainy Night in Georgia' by Randy Crawford </li>
+             <a href="https://www.youtube.com/watch?v=tvpap9phHdw">Listen to Rainy Night in Georgia' on Youtube </ul>
+        <div>
+        <!-- I will now go into each song listed in more detail, provide an image -->
+
+         <h2>'The Sky is Crying' by Gary Moore </h2>
+         <img src="/src/images/GaryMoore.jpg" alt="Gary Moore" width="300" height="300">
+            <img src="/src/images/SkyisCrying_Lyrics.jpg" alt="Sky is Crying lyrics" width="250" height="300">
+         <p>'The Sky is Crying' by Gary Moore is a cover of a blues classic originally written and recorded by Elmore James. <br>
+                This version, however, is a soulful and emotional rendition that captures the melancholy and longing of a rainy day. <br>
+                The slow, bluesy guitar riffs and Moore's heartfelt vocals make it a perfect soundtrack for a gloomy day. <br>
+               </p> </div>
+         <div>
+             <h3>'Purple Rain' by Prince </h3>
+             <img src="/src/images/PurpleRain.jpg" alt="Purple Rain album cover" width="300" height="300">
+            <img src="/src/images/PurpleRain_Lyrics" alt="Purple Rain lyrics" width="250" height="300">
+            <p>'Purple Rain' by Prince is a classic rock ballad that has become an anthem for rainy days. <br>
+                The song's haunting melody and Prince's soulful vocals create a sense of longing and introspection that is perfect for a rainy day. <br>
+                The iconic guitar solo towards the end of the song is a powerful moment that captures the intensity of emotions that can come with a stormy day. <br>
+                </p></div>
+        <div>
+           <h4>'Rainy Night in Georgia' by Randy Crawford </h4>
+            <img src="/src/images/RainyNightinGeorgia.jpg" alt="Rainy Night in Georgia album cover" width="300" height="300">
+            <img src="/src/images/RainyNightinGeorgia_Lyrics.jpg" alt="Rainy Night in Georgia lyrics" width="250" height="300">
+           <p>'Rainy Night in Georgia' by Randy Crawford is a soulful ballad that perfectly captures the mood of a rainy night. <br>
+                The song's slow tempo and Crawford's smooth vocals create a sense of intimacy and vulnerability that is perfect for a rainy day. <br>
+                The lyrics tell the story of a lonely night in Georgia, where the rain is falling and the heart is aching. <br>
+           <p>></div>
+        
+<ul> 
+
+     <Footer />   
+  <script>
+  
+  </script>
+</body>
+    
+</html>
+    </body>
+</html>

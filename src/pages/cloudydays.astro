@@ -1,0 +1,71 @@
+---
+const pageTitle = "Cloudy Days";
+import '/src/styles/mainstyle.css';
+import '/src/styles/nav.css';
+import Header from '/src/components/Header.astro';
+import Footer from '/src/components/Footer.astro';
+import '/src/scripts/nav.js';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title> {pageTitle} </title>
+    </head>
+    <body>
+         <!-- this contains a Nav bar component  -->
+    <Header />
+    <h1> {pageTitle} </h1>
+     <p> Some days the sky is hidden behind a thick layer of clouds. <br>
+       It is as if a curtain has been drawn over the sun, casting a soft, diffused light over everything. <br>
+        Sometimes it is heavy, grey and ominous, threatening rain at any moment,and other times it is soft and protective, shielding us from the harsh glare of the sun. <br>
+        Here are 3 of my favourite cloudy day songs that sink into your soul: </p>
+        <!-- I am adding an unordered list to showcase 3 of my favourite cloudy day songs with links to YouTube -->
+        <ul>
+            <li> 'Partly Cloudy with a Chance of Tears' by Skylar Grey </li>
+             <a href="https://www.youtube.com/watch?v=FKa8gX_drLg">Listen to 'Partly Cloudy with a Chance of Tears' on Youtube</a>
+            <li> 'Cloudy' by Dennis Van Aarssen </li>
+            <a href="https://www.youtube.com/watch?v=JndJLIUSjNo">Listen to 'Cloudy' on Youtube</a>
+            <li> 'Both Sides Now' by Josh Groban and Sara Bareilles </li>
+             <a href="https://www.youtube.com/watch?v=B4ethFJZXiA">Listen to 'Both Sides Now' on Youtube</a></ul>
+        <div>
+        <!-- I will now go into each song listed in more detail, provide an image -->
+
+         <h2>'Partly Cloudy with a Chance of Tears' by Skylar Grey </h2>
+         <img src="/src/images/SkylarGrey.jpg" alt="Skylar Gray" width="300" height="300">
+         <img src="/src/images/SkylarGrey_Lyrics.jpg" alt="Skylar Grey lyrics" width="250" height="300">
+         <p>'Partly Cloudy with a Chance of Tears'by Skylar Grey is a hauntingly beautiful song that captures the mood of a cloudy day. <br>
+                With a simplistic piano melody and Grey's ethereal vocals, the song creates a sense of introspection and melancholy that is perfect for a cloudy day. <br>
+                The lyrics speak of the uncertainty and unpredictability of life, much like the ever-changing nature of the weather. <br>
+               </p> </div>
+         <div>
+             <h3>'Cloudy' by Dennis Van Aarssen </h3>
+             <img src="/src/images/Cloudy.jpg" alt="Hold Me" width="300" height="300">
+            <img src="/src/images/Cloudy_Lyrics.jpg" alt="Cloudy lyrics" width="250" height="300">
+            <p>'Cloudy' by Dennis Van Aarssen is a slow jazz ballad that perfectly captures the mood of a cloudy day. <br>
+                The song's smooth melody and Aarssen's soulful vocals create a sense of intimacy and vulnerability that is perfect for a cloudy day. <br>
+                The lyrics speak of a love that warns of approaching storms, much like the clouds that gather in the sky. <br>
+            </p></div>
+           <h4>'Both Sides Now' by Josh Groban and Sara Bareilles </h4>
+            <img src="/src/images/BothSidesNow.jpg" alt="Both Sides Now" width="300" height="300">
+            <img src="/src/images/BothSidesNow_Lyrics.jpg" alt="Both Sides Now lyrics" width="250" height="300">
+           <p>'Both Sides Now' is a classic song written by Joni Mitchell and covered by many artists, including Josh Groban and Sara Bareilles. <br>
+                The song's gentle melody and heartfelt lyrics create a sense of nostalgia and reflection that is perfect for a cloudy day. <br>
+                The lyrics tell of seeing life from different perspectives, much like the way clouds can change shape and form in the sky. <br>
+           <p>></div>
+        
+<ul> 
+
+     <Footer />   
+  <script>
+  
+  </script>
+</body>
+    
+</html>
+    </body>
+</html>
+    </body>
+</html>
