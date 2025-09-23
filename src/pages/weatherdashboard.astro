@@ -42,18 +42,19 @@ import Footer from '/src/components/Footer.astro';
         <p>Let the weather move you to music.<br></p></div>
 
         <div id="search">
-            <form action="/weatherdashboard" method="get">
+            <form action="/https://api.weatherapi.com/v1/current.json?q+City&Lang=EN&keykey=a5c53cf6e1f646139d7172520250909" method="get">
                 <input type="text" name="city" placeholder="Enter city name" required>
                 <button type="submit">Get Weather</button>
             </form>
         <Footer />
-        <script>
-          //  let key: a5c53cf6e1f646139d7172520250909
-            //    async function fetchWeather(key, q='city') {
-          //      const data = await fetch('http://api.weatherapi.com/v1/current.json') 
-            //    const result = await data.json();
-            //    console.log(result);
-
-        </script>
+<script>
+  // Example: Fetch weather data using JavaScript
+  /*
+  fetch('https://api.weatherapi.com/v1/current.json?q=London&lang=EN&key=a5c53cf6e1f646139d7172520250909 )
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+  */
+</script>
 	</body>
 </html>

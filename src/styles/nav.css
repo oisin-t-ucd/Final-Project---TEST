@@ -4,7 +4,7 @@ a:link {
     text-decoration: underline;
 }
 a:visited {
-    color: rgb(247, 247, 247);
+    color: rgb(106, 37, 140);
     text-decoration: underline;
 }
 a:hover {
@@ -29,22 +29,3 @@ a:active {
 }
     
 
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
-    background: none;
-  }
-
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
-  }
-  
-
-
-
-}

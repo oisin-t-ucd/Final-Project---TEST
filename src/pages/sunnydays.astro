@@ -13,7 +13,7 @@ import Footer from '/src/components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<title>{pageTitle}</title
      <!-- The title of the page is set to "Sunny Days" -->
 </head>
@@ -28,12 +28,11 @@ import Footer from '/src/components/Footer.astro';
         <!-- I am adding an unordered list to showcase 3 of my favourite sunny day songs with links to YouTube -->
         <ul>
             <li> 'Meant to be' by Bebe Rexha and Florida Georgia Line</li>
-            <a href="https://www.youtube.com/watch?v=zDo0H8Fm7d0"> Listen to 'Meant to be' on YouTube</a>
             <li> 'Music Is Your Love' by Lay </li>
-             <a href="https://www.youtube.com/watch?v=wTFV24L4HYo"> Listen to 'Music Is Your Love' on YouTube</a>
             <li> 'Classic' by MKTO </li>
-             <a href="https://www.youtube.com/watch?v=4Ba_qTPA4Ds"> Listen to 'Classic' on YouTube</a></ul>
-        <div>
+           </ul>
+      <div class="container-fluid">
+
         <!-- I will now go into each song listed in more detail, provide an image -->
 
          <h2> 'Meant to be' by Bebe Rexha and Florida Georgia Line </h2>
@@ -41,28 +40,37 @@ import Footer from '/src/components/Footer.astro';
         <img src="/src/images/MeantToBeLyrics.jpg" alt="Meant to be lyrics" width="250" height="300">
          <p> This song is all about the idea that everything happens for a reason. <br>
                 It's a reminder to trust the journey and know that good things are coming your way. <br>
-                The upbeat tempo and catchy chorus make it impossible not to smile when you hear it.</p> </div>
-         <div>
+                The upbeat tempo and catchy chorus make it impossible not to smile when you hear it.<br>
+                <a href="https://www.youtube.com/watch?v=zDo0H8Fm7d0"> Listen to 'Meant to be' on YouTube</a> </p>
+        </div> </p> 
+          
+        </div>
+      <div class="container-fluid">
+
              <h3> 'Music Is Your Love' by Lay </h3>
              <img src="src/images/Step-Lay.jpeg" alt="Step by Lay album art" width="300" height="300">
              <img src="src/images/MusicisYourLoveLyrics.jpg" alt="Music is Your Love lyrics" width="250" height="300">
             <p> This song is all about the power of music to lift your spirits and make you feel alive. <br>
                 The infectious beat and Lay's smooth vocals will have you dancing in no time. <br>
-                It's a reminder that music is a universal language that can bring people together and create joy.</p></div>
-        <div>
+                It's a reminder that music is a universal language that can bring people together and create joy. <br>
+             <a href="https://www.youtube.com/watch?v=wTFV24L4HYo"> Listen to 'Music Is Your Love' on YouTube</a></p>
+           
+        </div>
+    <div class="container-fluid">
+
            <h4> 'Classic' by MKTO </h4>
             <img src="/src/images/Classic-MKTO.jpg" alt="Classic by MKTO album art" width="300" height="300">
             <img src="/src/images/ClassicLyrics.jpg" alt="Classic lyrics" width="250" height="300">
            <p> This song is a throwback to the classic love songs of the past. <br>
                 It's a reminder that true love never goes out of style and that sometimes the best things in life are the simplest. <br>
-                The catchy chorus and upbeat tempo will have you singing along in no time.</p></div>
+                The catchy chorus and upbeat tempo will have you singing along in no time.<br> <a href="https://www.youtube.com/watch?v=4Ba_qTPA4Ds"> Listen to 'Classic' on YouTube</a></p>
+        
+        </div>
         
 <ul> 
 
      <Footer />   
-  <script>
-  
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
     
 </html>

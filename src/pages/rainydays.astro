@@ -9,9 +9,10 @@ import Footer from '/src/components/Footer.astro';
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title> {pageTitle} </title>
     </head>
     <body>
@@ -25,12 +26,10 @@ import Footer from '/src/components/Footer.astro';
         <!-- I am adding an unordered list to showcase 3 of my favourite rainy day songs with links to YouTube -->
         <ul>
             <li> 'The Sky is Crying' by Gary Moore </li>
-            <a href="https://www.youtube.com/watch?v=9GSjYdaGMqI">Listen to 'The Sky is Crying' on Youtube</a>
             <li> 'Purple Rain' by Prince </li>
-             <a href="https://www.youtube.com/watch?v=TvnYmWpD_T8">Listen to 'Purple Rain' on Youtube</a>
             <li> 'Rainy Night in Georgia' by Randy Crawford </li>
-             <a href="https://www.youtube.com/watch?v=tvpap9phHdw">Listen to Rainy Night in Georgia' on Youtube</a></ul>
-        <div>
+             </ul>
+     <div class="container-fluid">
         <!-- I will now go into each song listed in more detail, provide an image -->
 
          <h2>'The Sky is Crying' by Gary Moore </h2>
@@ -39,29 +38,33 @@ import Footer from '/src/components/Footer.astro';
          <p>'The Sky is Crying' by Gary Moore is a cover of a blues classic originally written and recorded by Elmore James. <br>
                 This version, however, is a soulful and emotional rendition that captures the melancholy and longing of a rainy day. <br>
                 The slow, bluesy guitar riffs and Moore's heartfelt vocals make it a perfect soundtrack for a gloomy day. <br>
+                 <a href="https://www.youtube.com/watch?v=9GSjYdaGMqI">Listen to 'The Sky is Crying' on Youtube</a>
                </p></div>
-         <div>
+    
+       <div class="container-fluid">
+ 
              <h3>'Purple Rain' by Prince </h3>
              <img src="/src/images/PurpleRain.jpg" alt="Purple Rain album cover" width="300" height="300">
             <img src="/src/images/PurpleRain_Lyrics.jpg" alt="Purple Rain Lyrics" width="250" height="300">
             <p>'Purple Rain' by Prince is a classic rock ballad that has become an anthem for rainy days. <br>
                 The song's haunting melody and Prince's soulful vocals create a sense of longing and introspection that is perfect for a rainy day. <br>
                 The iconic guitar solo towards the end of the song is a powerful moment that captures the intensity of emotions that can come with a stormy day. <br>
+                 <a href="https://www.youtube.com/watch?v=TvnYmWpD_T8">Listen to 'Purple Rain' on Youtube</a>
                 </p></div>
-        <div>
+        <div class="container-fluid">
+
            <h4>'Rainy Night in Georgia' by Randy Crawford </h4>
             <img src="/src/images/RainyNightinGeorgia.jpg" alt="Rainy Night in Georgia album cover" width="300" height="300">
             <img src="/src/images/RainyNightinGeorgia_Lyrics.jpg" alt="Rainy Night in Georgia lyrics" width="250" height="300">
            <p>'Rainy Night in Georgia' by Randy Crawford is a soulful ballad that perfectly captures the mood of a rainy night. <br>
                 The song's slow tempo and Crawford's smooth vocals create a sense of intimacy and vulnerability that is perfect for a rainy day. <br>
                 The lyrics tell the story of a lonely night in Georgia, where the rain is falling and the heart is aching. <br>
-           <p>></div>      
+                <a href="https://www.youtube.com/watch?v=tvpap9phHdw">Listen to Rainy Night in Georgia' on Youtube</a>
+           <p></div>      
 <ul> 
 
      <Footer />   
-  <script>
-  
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
     
 </html>
