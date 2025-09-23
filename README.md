@@ -14,7 +14,6 @@ This is a weather dashboard with a blog style incorporation of music to represen
 
 
 ## Technologies used
-???
 
 #### Languages & Frameworks
 
@@ -43,7 +42,8 @@ This is a weather dashboard with a blog style incorporation of music to represen
 
 
 #### Development Process:
-???
+I built from basic HTML to CSS and then incorporated Astro and Bootstrap with the API and Java Script being the final pieces of the puzzle.
+
 
 #### Credits/Acknowledgements:
 
