@@ -10,7 +10,7 @@ This is a weather dashboard with a blog style incorporation of music to represen
    Weather dashboard API - ability to search current weather conditions around the world.
 
 - ##### Feature 2:
-    When given a weather result with key words such as 'rain' or 'sun' it will throw up a song title as a result. There is also seperate pages with an assortmet of songs with added video links that can match the weather condition.
+    When given a weather result with key words such as 'rain' or 'sun' it will throw up a link to a related page. On this page there is an assortmet of songs with added video links that can match the weather condition.
 
 
 ## Technologies used
@@ -49,3 +49,5 @@ I built from basic HTML to CSS and then incorporated Astro and Bootstrap with th
 
 - UCD 
 - W3Schools
+- YouTube creator 'Andy's Tech Tutorials'
+- Youtube 
