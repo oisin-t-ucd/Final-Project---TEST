@@ -72,7 +72,7 @@ import Footer from '/src/components/Footer.astro';
 // Checking for weather conditions and navigating to corresponding pages
 if (text.includes("Sunny")) {
     window.location.href ="/Final-Project---Music-by-Mood/sunnydays/";
-} else if (text.includes("Rainy")) {
+} else if (text.includes("Rain")) {
     window.location.href="/Final-Project---Music-by-Mood/rainydays/";
 } else if (text.includes("Cloudy")) {
     window.location.href ="/Final-Project---Music-by-Mood/cloudydays/";
@@ -85,7 +85,8 @@ if (text.includes("Sunny")) {
 } else if (text.includes("Storm")) {
     window.location.href="/Final-Project---Music-by-Mood/rainydays/";
 } else {
-    alert("Sorry, I don't have a song for this weather condition. Please try another city.");
+    alert("Sorry, I don't have a page for this weather condition just yet, please check back later!");
+
 }
 })
 .catch((error) => console.error(error));
