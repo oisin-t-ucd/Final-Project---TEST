@@ -1,6 +1,0 @@
-
-/* Tried to remove dead space above header navigation links by creating a new CSS file and importing to the Header.astro component,
- does not seem to have had an effect */
-nav {
-    margin-top: 0;
-}
