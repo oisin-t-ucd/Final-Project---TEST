@@ -23,11 +23,14 @@ import Footer from '/src/components/Footer.astro';
                 p {
                     text-align: center; 
                     margin-top: 1px;
-				    margin-bottom: 20px; } 
+				    margin-bottom: 20px;} 
                    
-                    div {text-align: center; 
-                    margin-top: 1px;
-				    margin-bottom: 20px;}</style>
+             div {
+                text-align: center; 
+                margin-top: 1px;
+				margin-bottom: 20px;} 
+                
+                </style>
 	</head>
 	<body>
         <!-- this contains a Nav bar component --> 
@@ -42,19 +45,34 @@ import Footer from '/src/components/Footer.astro';
         <p>Let the weather move you to music.<br></p></div>
 
         <div id="search">
-            <form action="/https://api.weatherapi.com/v1/current.json?q+City&Lang=EN&keykey=a5c53cf6e1f646139d7172520250909" method="get">
+            <form action="/https://api.weatherapi.com/v1/current.json?q+City&Lang=EN&key=a5c53cf6e1f646139d7172520250909" method="get">
                 <input type="text" name="city" placeholder="Enter city name" required>
                 <button type="submit">Get Weather</button>
             </form>
+            <div id="weather-result"></div>
         <Footer />
 <script>
-  // Example: Fetch weather data using JavaScript
-  /*
-  fetch('https://api.weatherapi.com/v1/current.json?q=London&lang=EN&key=a5c53cf6e1f646139d7172520250909 )
+
+  document.querySelector("#search")
+  ?.addEventListener("submit", function (e) {
+    e.preventDefault();
+   console.log(e.target.city.value);
+   let value = e.target.city.value;
+   fetch(`https://api.weatherapi.com/v1/current.json?q=${value}&lang=EN&key=a5c53cf6e1f646139d7172520250909`,
+)
+
     .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-  */
-</script>
+    .then(data => {
+        console.log(data);
+        // Getting the weather condition text
+        let text = data.current.condition.text;
+    document.querySelector("#weather-result")!.innerText = text;
+        alert(`The current temperature in ${data.location.name} is ${data.current.temp_c}°C and is ${data.current.condition.text}.`);
+  })
+    .catch((error) => console.error(error));
+  });
+  </script>
+
+
 	</body>
 </html>
