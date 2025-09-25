@@ -71,19 +71,19 @@ import Footer from '/src/components/Footer.astro';
 
 // Checking for weather conditions and navigating to corresponding pages
 if (text.includes("Sunny")) {
-    window.location.href ="./sunnydays";
+    window.location.href ="./sunnydays/";
 } else if (text.includes("Rainy")) {
-    window.location.href = "./rainydays";
+    window.location.href = "./rainydays/";
 } else if (text.includes("Cloudy")) {
-    window.location.href = "./cloudydays";
+    window.location.href = "./cloudydays/";
 } else if (text.includes("Partly cloudy")) {
-    window.location.href = "./cloudydays";
+    window.location.href = "./cloudydays/";
 } else if (text.includes("Clear")) {
-    window.location.href = "./sunnydays";
+    window.location.href = "./sunnydays/";
 } else if (text.includes("Thunder")) {
-    window.location.href = "./cloudydays";
+    window.location.href =  "./cloudydays/";
 } else if (text.includes("Storm")) {
-    window.location.href = "./rainydays";
+    window.location.href = "./rainydays/";
 } else {
     alert("Sorry, I don't have a song for this weather condition. Please try another city.");
 }
